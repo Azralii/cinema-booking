@@ -1,0 +1,239 @@
+{
+  "movies": [
+    {
+    "id":1,
+    "title": "Titanic",
+    "description":"Titanic is a 1997 American disaster film directed, written, produced, and co-edited by James Cameron. Incorporating both historical and fictionalized",
+    "duration": "120 mins",
+    "image":"https://upload.wikimedia.org/wikipedia/en/1/18/Titanic_%281997_film%29_poster.png",
+
+    "shows": [
+        {
+          "time": "02.00 pm",
+          "room": "Room 1",
+          "seats": [
+            {"seatNumber": "A1", "booked": false},
+            {"seatNumber": "A2", "booked": true},
+            {"seatNumber": "A3", "booked": false},
+            {"seatNumber": "A4", "booked": false},
+            {"seatNumber": "A5", "booked": false}
+          ]
+        },{
+          "time": "07:00 PM",
+          "room": "Room 2",
+          "seats": [
+            {"seatNumber": "B1", "booked": false},
+            {"seatNumber": "B2", "booked": true}
+          ]
+        },{
+          "time": "4.00 PM",
+          "room": "Room 3",
+          "seats": [
+            {"seatNumber": "A1", "booked": true},
+            {"seatNumber": "A2", "booked": true},
+            {"seatNumber": "A3", "booked": false},
+            {"seatNumber": "A4", "booked": false},
+            {"seatNumber": "A5", "booked":true}
+          ]
+        },
+        {
+          "time": "5:00 PM",
+          "room": "Room 2",
+          "seats": [
+            {"seatNumber": "B1", "booked": false},
+            {"seatNumber": "B2", "booked": true}
+          ]
+        }
+
+      ]
+    },
+    {"id":2,
+      "title": "Freedom",
+      "description":"An idealistic young teacher attempts to unite her class of troubled teenagers, inspiring them to achieve their dreams beyond high schoo",
+      "duration": "100 mins",
+      "image":"https://d1csarkz8obe9u.cloudfront.net/posterpreviews/action-movie-poster-template-design-0f5fff6262fdefb855e3a9a3f0fdd361_screen.jpg",
+      "shows": [
+        {
+          "time": "2.00 PM",
+          "room": "Room 3",
+          "seats": [
+            {"seatNumber": "C1", "booked": true},
+            {"seatNumber": "C2", "booked": false},
+            {"seatNumber": "C3", "booked": true},
+            {"seatNumber": "C4", "booked": false}
+          ]
+          
+        },
+        {
+          "time": "4.30 PM",
+          "room": "Room 4",
+          "seats": [
+            {"seatNumber": "C1", "booked": false},
+            {"seatNumber": "C2", "booked": false},
+            {"seatNumber": "C3", "booked": true},
+            {"seatNumber": "C4", "booked": false}
+          ]
+          
+        },
+        {
+          "time": "2.00 PM",
+          "room": "Room 1",
+          "seats": [
+            {"seatNumber": "C1", "booked": true},
+            {"seatNumber": "C2", "booked": false},
+            {"seatNumber": "C3", "booked": true},
+            {"seatNumber": "C4", "booked": false}
+          ]
+          
+        },
+        {
+          "time": "7.00 PM",
+          "room": "Room 3",
+          "seats": [
+            {"seatNumber": "C1", "booked": true},
+            {"seatNumber": "C2", "booked": false},
+            {"seatNumber": "C3", "booked": true},
+            {"seatNumber": "C4", "booked": false}
+          ]
+          
+        }
+      ]
+    },
+    {"id":3,
+      "title": "Horror",
+      "description":"An idealistic young teacher attempts to unite her class of troubled teenagers, inspiring them to achieve their dreams beyond high schoo",
+      "duration": "140 mins",
+      "image":"https://img.buzzfeed.com/buzzfeed-static/static/2020-10/26/16/asset/83fbbc25fbc5/sub-buzz-194-1603731270-3.jpg",
+      "shows": [
+        {
+          "time": "2023-09-07T16:00:00.000Z",
+          "room": "Room 1",
+          "seats": [
+            {"seatNumber": "A1", "booked": false},
+            {"seatNumber": "A2", "booked": true},
+            {"seatNumber": "A3", "booked": false},
+            {"seatNumber": "A4", "booked": false},
+            {"seatNumber": "A5", "booked": false}
+          ]
+        },{
+          "time": "07:00 PM",
+          "room": "Room 2",
+          "seats": [
+            {"seatNumber": "B1", "booked": false},
+            {"seatNumber": "B2", "booked": true}
+          ]
+        },{
+          "time": "2023-09-07T13:00:00.000Z",
+          "room": "Room 3",
+          "seats": [
+            {"seatNumber": "A1", "booked": true},
+            {"seatNumber": "A2", "booked": true},
+            {"seatNumber": "A3", "booked": false},
+            {"seatNumber": "A4", "booked": true},
+            {"seatNumber": "A5", "booked": false}
+          ]
+        },
+        {
+          "time": "5:00 PM",
+          "room": "Room 2",
+          "seats": [
+            {"seatNumber": "B1", "booked": false},
+            {"seatNumber": "B2", "booked": true}
+          ]
+        }
+
+      ]
+    },
+    {"id":4,
+      "title": "No Country for old men",
+      "description":"A hunter's life takes a drastic turn when he discovers two million aftermath of a drug deal. He is then pursued by a psychopathic killer who .",
+      "image":"https://pixeldemonmg.co.uk/cdn/shop/products/no_country_for_old_men-p210856.jpg",
+      "duration": "110 mins",
+      "shows": [
+        {
+          "time": "2023-09-07T16:00:00.000Z",
+          "room": "Room 1",
+          "seats": [
+            {"seatNumber": "A1", "booked": false},
+            {"seatNumber": "A2", "booked": true},
+            {"seatNumber": "A3", "booked": false},
+            {"seatNumber": "A4", "booked": false},
+            {"seatNumber": "A5", "booked": false}
+          ]
+        },{
+          "time": "07:00 PM",
+          "room": "Room 2",
+          "seats": [
+            {"seatNumber": "B1", "booked": false},
+            {"seatNumber": "B2", "booked": true}
+          ]
+        },{
+          "time": "2023-09-07T13:00:00.000Z",
+          "room": "Room 3",
+          "seats": [
+            {"seatNumber": "A1", "booked": true},
+            {"seatNumber": "A2", "booked": true},
+            {"seatNumber": "A3", "booked": false},
+            {"seatNumber": "A4", "booked": true},
+            {"seatNumber": "A5", "booked": false}
+          ]
+        },
+        {
+          "time": "5:00 PM",
+          "room": "Room 2",
+          "seats": [
+            {"seatNumber": "B1", "booked": false},
+            {"seatNumber": "B2", "booked": true}
+          ]
+        }
+
+      ]
+    },
+    {"id":5,
+      "title": "Romantic",
+      "description":"A hunter's life takes a drastic turn when he discovers two million the aftermath of a drug deal. He is then pursued by a psychopathic killer who.",
+      "duration": "90 mins",
+      "image":"https://ik.imagekit.io/yfnz71p9w/wp-content/uploads/2022/05/TFIOS.jpg",
+      "shows": [
+        {
+          "time": "2023-09-07T16:00:00.000Z",
+          "room": "Room 1",
+          "seats": [
+            {"seatNumber": "A1", "booked": false},
+            {"seatNumber": "A2", "booked": true},
+            {"seatNumber": "A3", "booked": false},
+            {"seatNumber": "A4", "booked": false},
+            {"seatNumber": "A5", "booked": false}
+          ]
+        },{
+          "time": "07:00 PM",
+          "room": "Room 2",
+          "seats": [
+            {"seatNumber": "B1", "booked": false},
+            {"seatNumber": "B2", "booked": true}
+          ]
+        },{
+          "time": "2023-09-07T13:00:00.000Z",
+          "room": "Room 3",
+          "seats": [
+            {"seatNumber": "A1", "booked": true},
+            {"seatNumber": "A2", "booked": true},
+            {"seatNumber": "A3", "booked": false},
+            {"seatNumber": "A4", "booked": false},
+            {"seatNumber": "A5", "booked": false}
+          ]
+        },
+        {
+          "time": "5:00 PM",
+          "room": "Room 2",
+          "seats": [
+            {"seatNumber": "B1", "booked": false},
+            {"seatNumber": "B2", "booked": true}
+          ]
+        }
+
+      ]
+    }
+  ]
+
+}
