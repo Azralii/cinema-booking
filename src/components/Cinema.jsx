@@ -1,38 +1,10 @@
 import React, { useState, useEffect } from "react";
 import CinemaCard from "./CinemaCard";
 
-const Booking = () => {
-  const [cinemaData, setCinemaData] = useState(null);
+const Cinema = ({cinemaData,setCinemaData}) => {
   const [search, setSearch] = useState("");
-  // state to track if application is loading
-  const [loading, setLoading] = useState(true);
 
-  // state to track any error message
-  const [error, setError] = useState(null);
 
-  // trigger the arrow function inside useEffect ONE time before loading
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch("db.json");
-
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
-
-        const data = await response.json();
-
-        setCinemaData(data.movies);
-        localStorage.setItem("movies", JSON.stringify(data.movies));
-      } catch (err) {
-        setError(err);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchData();
-  }, []);
   useEffect(() => {
     const cinema = localStorage.getItem("movies");
     const parsedCinema = JSON.parse(cinema);
@@ -45,15 +17,7 @@ const Booking = () => {
       setCinemaData(parsedCinema);
     }
   }, [search]);
-  // check if loading, if true then we should display a loading message
-  if (loading) {
-    return <div>Loading...</div>;
-  }
 
-  // check if there is an error, if true then we should display it
-  if (error) {
-    return <div>Error: {error.message}</div>;
-  }
 
   return (
     <div className="booking">
@@ -86,4 +50,4 @@ const Booking = () => {
     </div>
   );
 };
-export default Booking;
+export default Cinema;

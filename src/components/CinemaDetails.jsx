@@ -7,7 +7,7 @@ const CinemaDetails = () => {
   const params = useParams();
 
   useEffect(() => {
-    const fetchData = async () => {
+    const getData = async () => {
       try {
         const movies = localStorage.getItem("movies");
         const parsedMovies = JSON.parse(movies);
@@ -19,7 +19,7 @@ const CinemaDetails = () => {
       }
     };
 
-    fetchData();
+    getData();
   }, []);
 
   return (
