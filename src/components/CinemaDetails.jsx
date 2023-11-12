@@ -6,14 +6,17 @@ const CinemaDetails = () => {
   const [movie, setMovie] = useState({});
   const params = useParams();
 
+  console.log(params)
+
   useEffect(() => {
     const getData = async () => {
       try {
         const movies = localStorage.getItem("movies");
         const parsedMovies = JSON.parse(movies);
         console.log({ parsedMovies });
-        const cinema = parsedMovies.filter((item) => item.id == params.id);
-        setMovie(cinema[0]);
+        const cinema = parsedMovies.find((item) => item._id == params.id);
+        console.log(cinema)
+        setMovie(cinema);
       } catch (err) {
         console.log(err);
       }
@@ -24,11 +27,11 @@ const CinemaDetails = () => {
 
   return (
     <div className="cinemaDetails">
-      <p>{movie.title}</p>
-      <p>{movie.duration}</p>
-      <img src={movie.image} width={"500px"} alt={movie.title} />
+      <p>{movie?.title}</p>
+      <p>{movie?.duration}</p>
+      <img src={movie?.image} width={"500px"} alt={movie?.title} />
       <p style={{ textAlign: "center", padding: "0 200px" }}>
-        {movie.description}
+        {movie?.description}
       </p>
       <div>
         {movie?.shows?.map((show, i) => (
@@ -37,7 +40,7 @@ const CinemaDetails = () => {
             <p style={{ textAlign: "center" }}>{show.room}</p>
             <div style={{ margin: "10px", textAlign: "center" }}>
               {show.seats.map((seat, i) => (
-                <ShowCard seat={seat} />
+                <ShowCard id={params.id} seat={seat} />
               ))}
             </div>
           </div>

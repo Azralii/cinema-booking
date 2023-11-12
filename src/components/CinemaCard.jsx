@@ -2,11 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const CinemaCard = ({ cinema }) => {
-  const { id } = cinema;
+  const { _id } = cinema;
   return (
-    <Link to={`/cinema/${id}`}>
+    <Link to={`/cinema/${_id}`}>
       <div className="card">
-        <h3>{cinema.title}</h3>
+        <h3>{cinema.title.slice(0,15)}</h3>
         <p>{cinema.duration}</p>
         <img
           src={cinema.image}
